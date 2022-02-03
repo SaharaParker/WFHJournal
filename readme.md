@@ -10,7 +10,7 @@
 - [x] Set up live-server and tailwindcss 
 - [x] Set up assets folder
 - [x] Add Screenshots of color way ideas and page ideas to assets
-- [ ] Make wireframe in Balsamiq
+- [x] Make wireframe in Balsamiq
 - [ ] Do Xano readings and demo
 - [ ] Set up HTML Pages (4 pages)
 - [ ] Do all HTML and CSS
