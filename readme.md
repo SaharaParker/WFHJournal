@@ -6,10 +6,10 @@
 - [ ] Create a member page to add entries
 
 ##Steps to take
-- [ ] Set up Repo
-- [ ] Set up live-server and tailwindcss 
-- [ ] Set up assets folder
-- [ ] Add Screenshots of color way ideas and page ideas to assets
+- [x] Set up Repo
+- [x] Set up live-server and tailwindcss 
+- [x] Set up assets folder
+- [x] Add Screenshots of color way ideas and page ideas to assets
 - [ ] Make wireframe in Balsamiq
 - [ ] Do Xano readings and demo
 - [ ] Set up HTML Pages (4 pages)
