@@ -12,8 +12,9 @@
 - [x] Add Screenshots of color way ideas and page ideas to assets
 - [x] Make wireframe in Balsamiq
 - [ ] Do Xano readings and demo
-- [ ] Set up HTML Pages (4 pages)
+- [x] Set up HTML Pages (4 pages)
 - [ ] Do all HTML and CSS
 - [ ] Do all javascript
 - [ ] Check that everything is functioning
 - [ ] Deploy to vercel
+
