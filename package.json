@@ -3,5 +3,9 @@
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
     "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "dev" : "live-server",
+    "tw:build" : "npx tailwindcss -i ./css/tailwind.css -o ./css/tailwind.css"
   }
 }
