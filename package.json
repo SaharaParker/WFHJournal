@@ -5,7 +5,7 @@
     "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "dev" : "live-server",
+    "dev" : "live-server .",
     "tw:build" : "npx tailwindcss -i ./css/tailwind.css -o ./css/tailwind.css"
   }
 }

@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <title>Log In</title>
 </head>
-<body>
-
+<body class="bg-camelot-200">
+    <div class="flex flex-col items-center rounded-3xl mx-auto my-80 px-1 pt-4 pb-24 w-1/6 border-4">
+        <h1 class="text-2xl text-center font-bold">Sign Up</h1>
+        <form id="signin" class="p-24">
+            <div class="rounded rounded-2xl mb-2 p-3">
+                <input type="text" id="signupname" placeholder="Name" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
+                <input type="email" id="email" placeholder="Email" class="rounded-lg text-center border-4 border-camelot-500">
+            </div>
+            <div class="rounded rounded-2xl mb-2 p-3">
+                <input type="text" id="newuser" placeholder="Create Username" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
+                <input type="password" id="newpass" placeholder="Create Password" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
+                <input type="password" id="confirmpass" placeholder="Confirm New Password" class="rounded-lg text-center mb-4 border-4 border-camelot-500">
+            </div>
+        </form>
+        <div>
+            <input type="text" id="create" value="Create Profile" class="text-center bg-wine-berry-500 hover:bg-cannon-pink-500 text-cannon-pink-200 font-semibold rounded-lg">
+        </div>
+    </div>
 </body>
 </html>
