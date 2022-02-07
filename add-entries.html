@@ -2,10 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Log In</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>New Entry</title>
 </head>
-<body>
+     <body class="bg-wine-berry-500">
 
-</body>
+            <div>
+                <h1 class="text-cannon-pink-500 text-2xl font-bold text-center">Add Entry</h1>
+                <div>
+                    <form id="addent">
+                        <div>
+                            <input type="text" placeholder="Name" id="author" class="border-4 border-cannon-pink-500">
+                            <input type="date" id="newdate" class="border-4 border-cannon-pink-500">
+                        </div>
+                        <div>
+                            <textarea name="new-entry" id="newentry" cols="50" rows="10" class="border-4 border-cannon-pink-500"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit as Public"
+                       class="mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
+                <input type="submit" value="Submit as Private"
+                       class="mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
+            </div>
+     </body>
 </html>

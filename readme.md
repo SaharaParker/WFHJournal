@@ -1,6 +1,6 @@
 ##Objectives
-- [ ] Create a Sign Up page
-- [ ] Create a Login page for members(w/Login as guest button)
+- [X] Create a Sign Up page
+- [X] Create a Login page for members(w/Login as guest button)
 - [ ] Create a guest page with PUBLIC entries only(w/ options to login or sign up)
 - [ ] Create a member page with ALL Entries visible and the ability to delete entires
 - [ ] Create a member page to add entries
@@ -16,5 +16,5 @@
 - [ ] Do all HTML and CSS
 - [ ] Do all javascript
 - [ ] Check that everything is functioning
-- [ ] Deploy to vercel
+- [X] Deploy to vercel
 

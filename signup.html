@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/tailwind.css">
-    <title>Log In</title>
+    <title>Sign Up</title>
 </head>
-<body class="bg-camelot-200">
-    <div class="flex flex-col items-center rounded-3xl mx-auto my-80 px-1 pt-4 pb-24 w-1/6 border-4">
-        <h1 class="text-2xl text-center font-bold">Sign Up</h1>
-        <form id="signin" class="p-24">
+<body class="bg-wine-berry-500">
+    <div class="flex flex-col items-center bg-camelot-900 rounded-3xl mx-auto my-80 px-1 pt-4 pb-24 w-1/6 border-8 border-cannon-pink-500">
+        <h1 class="font-bold text-cannon-pink-50 text-xl">Work From Home Journal</h1>
+        <h3 class="text-lg text-center text-cannon-pink-500 font-semibold mb-2">Sign up</h3>
+        <form id="signin" class="flex flex-col mt-8">
             <div class="rounded rounded-2xl mb-2 p-3">
-                <input type="text" id="signupname" placeholder="Name" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
-                <input type="email" id="email" placeholder="Email" class="rounded-lg text-center border-4 border-camelot-500">
+                <input type="text" id="signupname" placeholder="Name" class="ml-4 mb-3 rounded-lg text-center border-4 border-pickled-bluewood-500 bg-deep-cerulean-200">
+                <input type="email" id="email" placeholder="Email" class="ml-4 rounded-lg text-center border-4 border-pickled-bluewood-500 bg-deep-cerulean-200">
             </div>
             <div class="rounded rounded-2xl mb-2 p-3">
-                <input type="text" id="newuser" placeholder="Create Username" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
-                <input type="password" id="newpass" placeholder="Create Password" class="rounded-lg text-center mb-2 border-4 border-camelot-500">
-                <input type="password" id="confirmpass" placeholder="Confirm New Password" class="rounded-lg text-center mb-4 border-4 border-camelot-500">
+                <input type="text" id="newuser" placeholder="Create Username" class="mb-3 ml-4 rounded-lg text-center border-4 border-pickled-bluewood-500 bg-deep-cerulean-200">
+                <input type="password" id="newpass" placeholder="Create Password" class="mb-3 ml-4 rounded-lg text-center border-4 border-pickled-bluewood-500 bg-deep-cerulean-200">
+                <input type="password" id="confirmpass" placeholder="Confirm New Password" class="ml-4 rounded-lg text-center border-4 border-pickled-bluewood-500 bg-deep-cerulean-200">
             </div>
         </form>
         <div>
-            <input type="text" id="create" value="Create Profile" class="text-center bg-wine-berry-500 hover:bg-cannon-pink-500 text-cannon-pink-200 font-semibold rounded-lg">
+            <input type="submit" id="create" value="Create Profile" class=" mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
         </div>
     </div>
 </body>
