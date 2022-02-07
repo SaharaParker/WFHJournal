@@ -6,25 +6,25 @@
     <title>New Entry</title>
 </head>
      <body class="bg-wine-berry-500">
-     <h1 class="text-cannon-pink-500 text-2xl font-bold text-center">Add Entry</h1>
 
-     <div class="flex flex-col justify-evenly rounded-2xl space-x-4 h-full w-1/4 mt-60 mx-auto p-bg-camelot-500">
+     <div class="flex flex-col bg-camelot-500 rounded-2xl space-x-4 h-full w-1/4 mt-60 mx-auto bg-camelot-500">
+         <h1 class="text-cannon-pink-500 text-lg font-bold text-center">Add Entry</h1>
          <div>
              <form id="addent">
-                 <div>
+                 <div class="flex justify-between">
                      <input type="text" placeholder="Name" id="author" class="border-4 rounded-xl border-cannon-pink-500">
-                     <input type="date" id="newdate" class="border-4 rounded-xl border-cannon-pink-500">
+                     <input type="date" id="newdate" class="mr-3 border-4 rounded-xl border-cannon-pink-500">
                  </div>
                  <div>
                      <textarea name="new-entry" id="newentry" cols="50" rows="10"
-                               class="border-4 rounded-xl border-cannon-pink-500"></textarea>
+                               class="mt-6 border-4 rounded-xl border-cannon-pink-500"></textarea>
                  </div>
              </form>
          </div>
 
          <div>
              <input type="submit" value="Submit as Public"
-                    class="mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
+                    class="mb-3 ml-4 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
              <input type="submit" value="Submit as Private"
                     class="mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
          </div>
