@@ -25,15 +25,15 @@ signForm.addEventListener('submit',(event) =>{
 
 function checkIsNotEmpty(domInput,errorMessage){
     if (domInput.value === ""){
+        console.log(errorMessage);
 
+        const div = document.createElement('div');
+        div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
 
-    const div = document.createElement('div');
-    div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
+        errDiv.appendChild(div);
 
-    errDiv.appendChild(div);
-
-    return false;
-}
+     return false;
+    }
 
     return true;
 }
