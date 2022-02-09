@@ -11,5 +11,13 @@ signForm.addEventListener('submit',(event) =>{
     errorDiv.innerHTML = ""
     event.preventDefault();
 
+    if(
+        checkIsNotEmpty(firstInput,"Enter Your First Name.")&&
+        checkIsNotEmpty(lastInput,"Enter Your Last Name.")&&
+        checkIsNotEmpty(newUsername,"Create a New Username.")&&
+        checkIsNotEmpty(newPassword,"Create a New Password.")&&
+        checkIsNotEmpty(lastInput,"Enter Your Email Address.")
+    ){
 
+    }
 })
