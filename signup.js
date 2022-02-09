@@ -24,5 +24,7 @@ signForm.addEventListener('submit',(event) =>{
 });
 
 function checkIsNotEmpty(dominput,errorMessage){
+    const div = document.createElement('div');
+    div.innerHTML = '<p></p>'
 
 }
