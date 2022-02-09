@@ -8,5 +8,8 @@ const emailInput = document.getElementById('email');
 
 
 signForm.addEventListener('submit',(event) =>{
+    errorDiv.innerHTML = ""
+    event.preventDefault();
+
 
 })
