@@ -6,12 +6,12 @@ let entriesFromBackendDataStore = [
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum fugit in laudantium molestias nihil nostrum odio rem? Aperiam dolorum et iure nihil nostrum!"
     }, {
         id: 2,
-        fullName: "Mary Doe",
+        fullName: "Olive Brown",
         date: "2022-02-02",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus facilis numquam!"
     }, {
         id: 3,
-        fullName: "Annete Doe",
+        fullName: "Cat Rily",
         date: "2022-02-03",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum est exercitationem laboriosam nostrum obcaecati omnis quibusdam reprehenderit saepe?"
     }];
