@@ -16,7 +16,7 @@ signForm.addEventListener('submit',(event) =>{
         checkIsNotEmpty(lastInput,"Enter Your Last Name.")&&
         checkIsNotEmpty(newUsername,"Create a New Username.")&&
         checkIsNotEmpty(newPassword,"Create a New Password.")&&
-        checkIsNotEmpty(lastInput,"Enter Your Email Address.")
+        checkIsNotEmpty(emailInput,"Enter Your Email Address.")
     ){
         window.location.href = "/dashboard.html";
 
@@ -28,7 +28,7 @@ function checkIsNotEmpty(domInput,errorMessage){
     const div = document.createElement('div');
     div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
 
-    errorDiv.appendChild(div);
+    errDiv.appendChild(div);
 
     return false;
 }
