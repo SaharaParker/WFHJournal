@@ -23,8 +23,15 @@ signForm.addEventListener('submit',(event) =>{
     }
 });
 
-function checkIsNotEmpty(dominput,errorMessage){
+function checkIsNotEmpty(domInput,errorMessage){
+    if (domInput.value === ""){
     const div = document.createElement('div');
     div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
 
+    errorDiv.appendChild(div);
+
+    return false;
+}
+
+    return true;
 }
