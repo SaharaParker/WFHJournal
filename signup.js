@@ -18,6 +18,7 @@ signForm.addEventListener('submit',(event) =>{
         checkIsNotEmpty(newPassword,"Create a New Password.")&&
         checkIsNotEmpty(lastInput,"Enter Your Email Address.")
     ){
+        window.location.href = "/dashboard.html";
 
     }
-})
+});
