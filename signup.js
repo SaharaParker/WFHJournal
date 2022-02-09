@@ -28,12 +28,11 @@ function checkIsNotEmpty(domInput,errorMessage){
         console.log(errorMessage);
 
         const div = document.createElement('div');
-        div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
+        div.innerHTML = `<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>`;
 
         errDiv.appendChild(div);
 
      return false;
     }
-
     return true;
 }
