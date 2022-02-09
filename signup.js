@@ -8,7 +8,7 @@ const emailInput = document.getElementById('email');
 
 
 signForm.addEventListener('submit',(event) =>{
-    errorDiv.innerHTML = ""
+    errDiv.innerHTML = ""
     event.preventDefault();
 
     if(
@@ -25,6 +25,8 @@ signForm.addEventListener('submit',(event) =>{
 
 function checkIsNotEmpty(domInput,errorMessage){
     if (domInput.value === ""){
+
+
     const div = document.createElement('div');
     div.innerHTML = '<p class="bg-gray-400 text-red-600 font-bold border-4">${errorMessage}</p>';
 
