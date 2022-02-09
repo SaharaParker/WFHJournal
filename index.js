@@ -8,7 +8,7 @@ loginForm.addEventListener('submit',(event) =>{
     event.preventDefault();
 
     if(
-        checkIsNotEmpty(usernameInput,"Username address is required")&&
+        checkIsNotEmpty(usernameInput,"Username is required.")&&
         checkIsNotEmpty(passwordInput,"Password is required.")
     ){
         window.location.href='/dashboard.html';
@@ -17,5 +17,16 @@ loginForm.addEventListener('submit',(event) =>{
 });
 
 function checkIsNotEmpty(domInput,errorMessage){
+    if (domInput.value === ""){
+        // alert("Email or Password Required!");
+        console.log(errorMessage);
 
+        const div = document.createElement('div');
+        div.innerHTML = `<p class="bg-red-400 text-white"> ${errorMessage}</p>`;
+
+        errorDiv.appendChild(div);
+
+        return false;
+    }
+    return true;
 }
