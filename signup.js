@@ -7,3 +7,6 @@ const newPassword = document.getElementById('newpass');
 const emailInput = document.getElementById('email');
 
 
+signForm.addEventListener('submit',(event) =>{
+
+})
