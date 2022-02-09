@@ -22,3 +22,7 @@ signForm.addEventListener('submit',(event) =>{
 
     }
 });
+
+function checkIsNotEmpty(dominput,errorMessage){
+
+}
