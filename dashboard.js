@@ -33,6 +33,6 @@ let allEntries = [
     },
 ];
 
-const journalDiv = document.getElementById('entrycontain');
+const journalDiv = document.getElementById('jourentries');
 
 displayAllEntries(allEntries)
