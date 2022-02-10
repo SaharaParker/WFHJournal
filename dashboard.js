@@ -33,4 +33,6 @@ let journalEntries = [
     },
 ]
 
-const journalForm = document.getElementById()
+const journalDiv = document.getElementById('entrycontain');
+
+displayAll(journalEntries)
