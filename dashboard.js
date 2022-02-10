@@ -33,6 +33,23 @@ let allEntries = [
     },
 ];
 
-const journalDiv = document.getElementById('jourentries');
+const entryShow = document.getElementById('entrycontain');
 
 displayAllEntries(allEntries)
+
+function displayAllEntries(items) {
+    allEntries.innerHTML = ""
+
+    for(const key in items){
+        const newsExist = document.createElement('div');
+        newsExist.innerHTML=` 
+            <div>
+            <h3 class="font-semibold text-lg underline">${items[key].fullName}</h3>
+            <h5 class="mb-2">${items[key].date}</h5>
+            <p class="mb-2">${items[key].content}</p>
+        </div>
+    `;
+
+        entryShow.appendChild(allEntries); //adds new div to existing div
+    }
+}
