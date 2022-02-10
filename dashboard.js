@@ -33,3 +33,4 @@ let journalEntries = [
     },
 ]
 
+const journalForm = document.getElementById()
