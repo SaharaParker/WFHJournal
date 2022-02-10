@@ -1,4 +1,4 @@
-let journalEntries = [
+let allEntries = [
     {
         staffId : 1,
         firstName :"Sahara",
@@ -35,4 +35,4 @@ let journalEntries = [
 
 const journalDiv = document.getElementById('entrycontain');
 
-displayAll(journalEntries)
+displayAllEntries(allEntries)
