@@ -43,9 +43,11 @@ function displayAllEntries(items) {
     for(const key in items){
         const entryDiv = document.createElement('div');
         entryDiv.innerHTML=` 
-            <div>
-            <h3 class="font-semibold text-lg underline">${items[key].firstName}</h3>
-            <h3 class="font-semibold text-lg underline">${items[key].lastName}</h3>
+        <div>
+            <div class="flex space-x-1 underline">
+                <h3 class="font-semibold text-lg">${items[key].firstName}</h3>
+                <h3 class="font-semibold text-lg">${items[key].lastName}</h3>
+            </div>
             <h5 class="mb-2">${items[key].date}</h5>
             <p class="mb-2">${items[key].content}</p>
         </div>
