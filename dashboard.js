@@ -31,7 +31,7 @@ let allEntries = [
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus eos modi necessitatibus omnis quidem, tempore ut!",
         isPublic: false
     },
-]
+];
 
 const journalDiv = document.getElementById('entrycontain');
 
