@@ -44,12 +44,13 @@ function displayAllEntries(items) {
         const entryDiv = document.createElement('div');
         entryDiv.innerHTML=` 
             <div>
-            <h3 class="font-semibold text-lg underline">${items[key].fullName}</h3>
+            <h3 class="font-semibold text-lg underline">${items[key].firstName}</h3>
+            <h3 class="font-semibold text-lg underline">${items[key].lastName}</h3>
             <h5 class="mb-2">${items[key].date}</h5>
             <p class="mb-2">${items[key].content}</p>
         </div>
     `;
 
-        entryShow.appendChild(allEntries); //adds new div to existing div
+        entryShow.appendChild(entryDiv); //adds new div to existing div
     }
 }
