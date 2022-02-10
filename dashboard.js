@@ -38,11 +38,11 @@ const entryShow = document.getElementById('entrycontain');
 displayAllEntries(allEntries)
 
 function displayAllEntries(items) {
-    allEntries.innerHTML = ""
+    entryShow.innerHTML = ""
 
     for(const key in items){
-        const newsExist = document.createElement('div');
-        newsExist.innerHTML=` 
+        const entryDiv = document.createElement('div');
+        entryDiv.innerHTML=` 
             <div>
             <h3 class="font-semibold text-lg underline">${items[key].fullName}</h3>
             <h5 class="mb-2">${items[key].date}</h5>
