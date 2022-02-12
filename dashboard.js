@@ -1,36 +1,40 @@
 let allEntries = [
     {
-        staffId : 1,
-        firstName :"Sahara",
-        lastName: "Parker",
-        date: "2022-02-02",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis.",
-        isPublic: false
+        "id": 1,
+        "created_at": 1644606113560,
+        "name": "Sahara Parker",
+        "date": "2022-02-02",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+        "isPublic": false,
+        "user_id": 1
     },
     {
-        staffId: 2,
-        firstName: "Naya",
-        lastName: "Nelson",
-        date: "2022-02-02",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-        isPublic: true
+        "id": 2,
+        "created_at": 1644606144699,
+        "name": "Naya Nelson",
+        "date": "2022-02-04",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+        "isPublic": true,
+        "user_id": 2
     },
     {
-        staffId: 3,
-        firstName: "Pete",
-        lastName: "Grey",
-        date: "2022-02-04",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos dolorem eaque, expedita itaque libero magni modi qui sequi sint tenetur vitae voluptas.",
-        isPublic: true
+        "id": 3,
+        "created_at": 1644606214326,
+        "name": "Pete Gray",
+        "date": "2022-02-05",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+        "isPublic": true,
+        "user_id": 3
     },
     {
-        staffId: 4,
-        firstName: "Greg",
-        lastName: "Lambert",
-        date: "2022-02-05",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus eos modi necessitatibus omnis quidem, tempore ut!",
-        isPublic: false
-    },
+        "id": 4,
+        "created_at": 1644606239076,
+        "name": "Greg Lambert",
+        "date": "2022-02-08",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+        "isPublic": false,
+        "user_id": 4
+    }
 ];
 
 const entryShow = document.getElementById('entrycontain');
@@ -45,8 +49,7 @@ function displayAllEntries(items) {
         entryDiv.innerHTML=` 
         <div>
             <div class="flex space-x-1 underline">
-                <h3 class="font-semibold text-lg">${items[key].firstName}</h3>
-                <h3 class="font-semibold text-lg">${items[key].lastName}</h3>
+                <h3 class="font-semibold text-lg">${items[key].name}</h3>
             </div>
             <h5 class="mb-2">${items[key].date}</h5>
             <p class="mb-2">${items[key].content}</p>
