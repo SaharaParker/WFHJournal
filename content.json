@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "created_at": 1644606113560,
+    "name": "Sahara Parker",
+    "date": "2022-02-02",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+    "isPublic": false,
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "created_at": 1644606144699,
+    "name": "Naya Nelson",
+    "date": "2022-02-04",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+    "isPublic": true,
+    "user_id": 2
+  },
+  {
+    "id": 3,
+    "created_at": 1644606214326,
+    "name": "Pete Gray",
+    "date": "2022-02-05",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+    "isPublic": true,
+    "user_id": 3
+  },
+  {
+    "id": 4,
+    "created_at": 1644606239076,
+    "name": "Greg Lambert",
+    "date": "2022-02-08",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
+    "isPublic": false,
+    "user_id": 4
+  }
+]
