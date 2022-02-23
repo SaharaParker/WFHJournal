@@ -5,7 +5,10 @@
     "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "dev" : "live-server .",
-    "tw:build" : "npx tailwindcss -i ./css/tailwind.css -o ./css/tailwind.css"
+    "dev": "live-server .",
+    "tw:build": "npx tailwindcss -i ./css/tailwind.css -o ./css/tailwind.css"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.30.6"
   }
 }

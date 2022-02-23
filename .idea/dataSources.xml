@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\MSIMBO\PhpstormProjects\WFHJournal\assets\WFHJournal Wireframe.bmpr</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="postgres" uuid="150ef2ff-cf5b-462b-9671-bb8b7d1c1fd5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://db.tkuelmfwvgrzbvyncons.supabase.co:6543/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

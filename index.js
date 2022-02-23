@@ -2,37 +2,8 @@ const loginForm = document.getElementById('login');
 const errorDiv = document.getElementById('indexErr');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
-const API_URL = "https://x8ki-letl-twmt.n7.xano.io/api:oFJ3ec1C/user";
-
-let user = [{
-    "id": 1,
-    "created_at": 1644605690672,
-    "name": "Sahara Parker",
-    "email": "sahara@WFH.com"
-},
-    {
-        "id":2,
-        "created_at":1644605748762,
-        "name":"Naya Nelson",
-        "email":"nnelson@WFH.com"
-    },
-    {"id":3,
-        "created_at":1644605790178,
-        "name":"Pete Grey",
-        "email":"peteg1@WFH.com"
-    },
-    {
-        "id":4,
-        "created_at":1644605822800,
-        "name":"Greg Lambert",
-        "email":"journalgl@WFH.com"
-    },
-    {
-        "id":5,
-        "created_at":1644607808869,
-        "name":"Kim Anne",
-        "email":"kimberly@WFH.com"
-    }]
+const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co";
+const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw";
 
 console.log(user)
 
@@ -64,6 +35,7 @@ function checkIsNotEmpty(domInput,errorMessage){
     return true;
 }
 
-fetch(`${API_URL}`)
+
+
 
 

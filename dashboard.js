@@ -1,45 +1,8 @@
-let allEntries = [
-    {
-        "id": 1,
-        "created_at": 1644606113560,
-        "name": "Sahara Parker",
-        "date": "2022-02-02",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
-        "isPublic": false,
-        "user_id": 1
-    },
-    {
-        "id": 2,
-        "created_at": 1644606144699,
-        "name": "Naya Nelson",
-        "date": "2022-02-04",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
-        "isPublic": true,
-        "user_id": 2
-    },
-    {
-        "id": 3,
-        "created_at": 1644606214326,
-        "name": "Pete Gray",
-        "date": "2022-02-05",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
-        "isPublic": true,
-        "user_id": 3
-    },
-    {
-        "id": 4,
-        "created_at": 1644606239076,
-        "name": "Greg Lambert",
-        "date": "2022-02-08",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque, omnis",
-        "isPublic": false,
-        "user_id": 4
-    }
-];
 
-const entryShow = document.getElementById('entrycontain');
 
-displayAllEntries(allEntries)
+// const entryShow = document.getElementById('entrycontain');
+//
+// displayAllEntries(allEntries)
 
 function displayAllEntries(items) {
     entryShow.innerHTML = ""
@@ -59,3 +22,18 @@ function displayAllEntries(items) {
         entryShow.appendChild(entryDiv); //adds new div to existing div
     }
 }
+
+const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co"
+
+fetch(API_URL)
+    .then(response => response.json())
+    .then(data => {
+        const publicNews =
+            data.filter(item => item.isPublic === true)
+
+        console.log("Public News Only")
+        publicNews.map(item => console.log(item.content))
+
+        console.log("All News")
+        data.map(item => console.log(item.content))
+    });
