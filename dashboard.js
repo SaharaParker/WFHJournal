@@ -1,7 +1,6 @@
 
 
 const entryShow = document.getElementById('entrycontain');
-
 let allEntries = [
     {
         "id": 1,
@@ -32,7 +31,43 @@ let allEntries = [
         "staff_id": 4
     }
 ]
-// displayAllEntries(allEntries)
+
+
+let staff = [
+    {
+        "id": 1,
+        "created_at": "2022-02-23T00:10:14+00:00",
+        "firstName": "Sahara",
+        "lastName": "Parker",
+        "email": "THsahara@WFH.com",
+        "password": "Password1"
+    },
+    {
+        "id": 2,
+        "created_at": "2022-02-23T00:16:04+00:00",
+        "firstName": "Naya",
+        "lastName": "Nelson",
+        "email": "nnelson@WFH.com",
+        "password": "Password2\r\n"
+    },
+    {
+        "id": 3,
+        "created_at": "2022-02-23T00:16:53+00:00",
+        "firstName": "Pete",
+        "lastName": "Grey",
+        "email": "peteg1@WFH.com",
+        "password": "Password3"
+    },
+    {
+        "id": 4,
+        "created_at": "2022-02-23T00:17:47+00:00",
+        "firstName": "Greg",
+        "lastName": "Lambert",
+        "email": "journalgl@WFH.com",
+        "password": "Password4"
+    }
+]
+displayAllEntries(allEntries)
 
 function displayAllEntries(items) {
     entryShow.innerHTML = ""
@@ -42,10 +77,11 @@ function displayAllEntries(items) {
         entryDiv.innerHTML=` 
         <div>
             <div class="flex space-x-1 underline">
-                <h3 class="font-semibold text-lg">${items[key].name}</h3>
+                <h3 class="font-semibold text-lg">${staff[key].firstName}</h3>
+                <h3 class="font-semibold text-lg">${staff[key].lastName}</h3>
             </div>
-            <h5 class="mb-2">${items[key].date}</h5>
-            <p class="mb-2">${items[key].content}</p>
+            <h5 class="mb-2">${allEntries[key].created_at}</h5>
+            <p class="mb-2">${allEntries[key].content}</p>
         </div>
     `;
 
@@ -54,8 +90,9 @@ function displayAllEntries(items) {
 }
 
 const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co"
+const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxMzAzOTAsImV4cCI6MTk2MDcwNjM5MH0.mzpR2uu1eH7weegTdq4lthnsVpcfLN6pJe3zNnWI8W4'
 
-fetch(API_URL)
+fetch(`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
         const publicNews =
