@@ -25,7 +25,7 @@ const signForm = document.getElementById('signup');
                 password: newpassValue
             }
 
-            const signUser = await fetch(`${API_URL}/auth/v1/signup?apikey=${API_KEY}`,{
+            const signUser = await fetch(`${API_URL}?apikey=${API_KEY}`,{
                 method:"POST",
                 headers: {
                     'Content-Type': 'application/json',
