@@ -1,5 +1,5 @@
 
-
+// MAY NEED AN IF/THEN STATEMENT???
 const entryShow = document.getElementById('entrycontain');
 let allEntries = [
     {
@@ -67,7 +67,6 @@ let staff = [
         "password": "Password4"
     }
 ]
-displayAllEntries(allEntries)
 
 function displayAllEntries(items) {
     entryShow.innerHTML = ""
@@ -95,12 +94,16 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
 fetch(`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
+
+        const allEntries =
+            data.map(item => console.log(item.content))
+            displayAllEntries(allEntries)
+
         const publicNews =
             data.filter(item => item.isPublic === true)
+            console.log("Public News Only")
+            publicNews.map(item => console.log(item.content))
+            displayAllEntries(publicNews)
 
-        console.log("Public News Only")
-        publicNews.map(item => console.log(item.content))
 
-        console.log("All News")
-        data.map(item => console.log(item.content))
     });
