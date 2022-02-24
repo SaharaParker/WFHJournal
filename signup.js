@@ -3,8 +3,7 @@ const lastNameValue = "Parker"
 const newpassValue = "Password1"
 const emailValue = "THsahara@WFH.com"
 const API_URL = `https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup`;
-const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxMzAzOTAsImV4cCI6MTk2MDcwNjM5MH0.mzpR2uu1eH7weegTdq4lthnsVpcfLN6pJe3zNnWI8W4";
-
+const API_KEY = ""
 const signForm = document.getElementById('signup');
 
     signForm.addEventListener('submit',(event) => {
