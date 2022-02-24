@@ -5,7 +5,55 @@ const passwordInput = document.getElementById('password');
 const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co";
 const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxMzAzOTAsImV4cCI6MTk2MDcwNjM5MH0.mzpR2uu1eH7weegTdq4lthnsVpcfLN6pJe3zNnWI8W4";
 
-console.log(user)
+
+let allStaff = [
+    {
+        "id": 1,
+        "created_at": "2022-02-23T00:10:14+00:00",
+        "firstName": "Sahara",
+        "lastName": "Parker",
+        "email": "THsahara@WFH.com",
+        "password": "Password1"
+    },
+    {
+        "id": 2,
+        "created_at": "2022-02-23T00:16:04+00:00",
+        "firstName": "Naya",
+        "lastName": "Nelson",
+        "email": "nnelson@WFH.com",
+        "password": "Password2\r\n"
+    },
+    {
+        "id": 3,
+        "created_at": "2022-02-23T00:16:53+00:00",
+        "firstName": "Pete",
+        "lastName": "Grey",
+        "email": "peteg1@WFH.com",
+        "password": "Password3"
+    },
+    {
+        "id": 4,
+        "created_at": "2022-02-23T00:17:47+00:00",
+        "firstName": "Greg",
+        "lastName": "Lambert",
+        "email": "journalgl@WFH.com",
+        "password": "Password4"
+    }
+]
+
+
+// const email =
+// const password =
+
+
+let
+
+{ email, password } = await supabase.auth.signIn({
+    email: 'someone@email.com',
+    password: 'ASeMruenSCZKiVMCPjZa'
+})
+
+console.log(allStaff);
 
 loginForm.addEventListener('submit',(event) =>{
     errorDiv.innerHTML = ""
