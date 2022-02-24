@@ -1,0 +1,22 @@
+###
+
+# curl -X POST 'https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup'
+#-H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw"
+#-H "Content-Type: application/json"
+#-d '{
+#  "email": "someone@email.com",
+#  "password": "xLrWpymbQQxjIoDfMMSF"
+#}'
+POST https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw
+Content-Type: application/json
+
+{
+  "firstName": "Kim",
+   "lastName": "Anne",
+  "email": "kimanne@WFH.com",
+  "password": "Password5"
+}
+
+###
+
