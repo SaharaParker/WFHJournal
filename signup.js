@@ -1,9 +1,9 @@
 const signForm = document.getElementById('signup');
 const errDiv = document.getElementById('signErr');
-const firstNameInput = document.getElementById('firstName');
-const lastNameInput = document.getElementById('lastName');
-const newPassword = document.getElementById('newpass');
-const emailInput = document.getElementById('email');
+const firstNameInput = document.getElementById('firstName').value;
+const lastNameInput = document.getElementById('lastName').value;
+const newPassword = document.getElementById('newpass').value;
+const emailInput = document.getElementById('newemail').value;
 
 
 signForm.addEventListener('submit',(event) =>{
