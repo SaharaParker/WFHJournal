@@ -10,21 +10,21 @@ const lastNameInput = document.getElementById('lastName').value;
 const newPassword = document.getElementById('newpass').value;
 const emailInput = document.getElementById('newemail').value;
 
-signForm.addEventListener('submit',(event) => {
-    event.preventDefault()
+    signForm.addEventListener('submit',(event) => {
 
-    newStaff(firstNameValue, lastNameValue, emailValue, newpassValue)
-        .then(data => {
-            if (data === true) {
-                window.location.href = "/index.html";
+        event.preventDefault()
+
+        newStaff(firstNameValue, lastNameValue, emailValue, newpassValue)
+            .then(data => {
+                if (data === true) {
+                    window.location.href = "/index.html";
             }
-        })
-});
+    })
 
-//     async function newStaff(firstName,lastName,email,password) {
-//     }
-// }
-
+    async function newStaff(){
+            return true
+        }
+    }
 
 // signForm.addEventListener('submit',(event) =>{
 //     errDiv.innerHTML = ""
