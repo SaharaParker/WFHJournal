@@ -19,6 +19,8 @@ const signForm = document.getElementById('signup');
     })
 
     async function newStaff() {
+
+            const signUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co`)
         }
     }
 
