@@ -24,7 +24,7 @@ const emailInput = document.getElementById('newemail').value;
     async function newStaff(){
             return true
         }
-    }
+    })
 
 // signForm.addEventListener('submit',(event) =>{
 //     errDiv.innerHTML = ""
