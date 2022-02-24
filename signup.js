@@ -1,6 +1,7 @@
 const signForm = document.getElementById('signup');
 const errDiv = document.getElementById('signErr');
-const nameInput = document.getElementById('firstName');
+const firstNameInput = document.getElementById('firstName');
+const lastNameInput = document.getElementById('lastName');
 const newPassword = document.getElementById('newpass');
 const emailInput = document.getElementById('email');
 
@@ -10,7 +11,8 @@ signForm.addEventListener('submit',(event) =>{
     event.preventDefault();
 
     if(
-        checkIsNotEmpty(nameInput,"Enter Your First Name.")&&
+        checkIsNotEmpty(firstNameInput,"Enter Your First Name.")&&
+        checkIsNotEmpty(lastNameInput,"Enter Your Last Name.")&&
         checkIsNotEmpty(newPassword,"Create a New Password.")&&
         checkIsNotEmpty(emailInput,"Enter Your Email Address.")
     ){
