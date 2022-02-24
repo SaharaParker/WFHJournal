@@ -3,8 +3,6 @@ const errorDiv = document.getElementById('indexErr');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const guestLogin = document.getElementById('submit-guest');
-const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co";
-const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxMzAzOTAsImV4cCI6MTk2MDcwNjM5MH0.mzpR2uu1eH7weegTdq4lthnsVpcfLN6pJe3zNnWI8W4";
 
 
 // const email =
