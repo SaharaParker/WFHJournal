@@ -1,3 +1,8 @@
+const firstNameValue = "Sahara"
+const lastNameValue = "Parker"
+const newpassValue = "Password1"
+const emailValue = "THsahara@WFH.com"
+
 const signForm = document.getElementById('signup');
 const errDiv = document.getElementById('signErr');
 const firstNameInput = document.getElementById('firstName').value;
@@ -5,24 +10,20 @@ const lastNameInput = document.getElementById('lastName').value;
 const newPassword = document.getElementById('newpass').value;
 const emailInput = document.getElementById('newemail').value;
 
-const firstName = "Sahara"
-const lastName = "Parker"
-const password = "Password1"
-const email = "THsahara@WFH.com"
-
 signForm.addEventListener('submit',(event) => {
     event.preventDefault()
 
-    newStaff(firstName,lastName,email,password)
+    newStaff(firstNameValue, lastNameValue, emailValue, newpassValue)
         .then(data => {
-            if(data === true) {
+            if (data === true) {
                 window.location.href = "/index.html";
             }
         })
+});
 
-    async function newStaff(firstName,lastName,email,password) {
-    }
-}
+//     async function newStaff(firstName,lastName,email,password) {
+//     }
+// }
 
 
 // signForm.addEventListener('submit',(event) =>{
