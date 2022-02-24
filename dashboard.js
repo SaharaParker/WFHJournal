@@ -1,7 +1,43 @@
 
 // MAY NEED AN IF/THEN STATEMENT???
 const entryShow = document.getElementById('entrycontain');
-let allEntries = [
+
+let staff = [
+    {
+        "id": 1,
+        "created_at": "2022-02-23T00:10:14+00:00",
+        "firstName": "Sahara",
+        "lastName": "Parker",
+        "email": "THsahara@WFH.com",
+        "password": "Password1"
+    },
+    {
+        "id": 2,
+        "created_at": "2022-02-23T00:16:04+00:00",
+        "firstName": "Naya",
+        "lastName": "Nelson",
+        "email": "nnelson@WFH.com",
+        "password": "Password2"
+    },
+    {
+        "id": 3,
+        "created_at": "2022-02-23T00:16:53+00:00",
+        "firstName": "Pete",
+        "lastName": "Grey",
+        "email": "peteg1@WFH.com",
+        "password": "Password3"
+    },
+    {
+        "id": 4,
+        "created_at": "2022-02-23T00:17:47+00:00",
+        "firstName": "Greg",
+        "lastName": "Lambert",
+        "email": "journalgl@WFH.com",
+        "password": "Password4"
+    }
+]
+
+let entries = [
     {
         "id": 1,
         "created_at": "2022-02-23T00:41:22+00:00",
@@ -32,42 +68,6 @@ let allEntries = [
     }
 ]
 
-
-let staff = [
-    {
-        "id": 1,
-        "created_at": "2022-02-23T00:10:14+00:00",
-        "firstName": "Sahara",
-        "lastName": "Parker",
-        "email": "THsahara@WFH.com",
-        "password": "Password1"
-    },
-    {
-        "id": 2,
-        "created_at": "2022-02-23T00:16:04+00:00",
-        "firstName": "Naya",
-        "lastName": "Nelson",
-        "email": "nnelson@WFH.com",
-        "password": "Password2\r\n"
-    },
-    {
-        "id": 3,
-        "created_at": "2022-02-23T00:16:53+00:00",
-        "firstName": "Pete",
-        "lastName": "Grey",
-        "email": "peteg1@WFH.com",
-        "password": "Password3"
-    },
-    {
-        "id": 4,
-        "created_at": "2022-02-23T00:17:47+00:00",
-        "firstName": "Greg",
-        "lastName": "Lambert",
-        "email": "journalgl@WFH.com",
-        "password": "Password4"
-    }
-]
-
 function displayAllEntries(items) {
     entryShow.innerHTML = ""
 
@@ -79,8 +79,8 @@ function displayAllEntries(items) {
                 <h3 class="font-semibold text-lg">${staff[key].firstName}</h3>
                 <h3 class="font-semibold text-lg">${staff[key].lastName}</h3>
             </div>
-            <h5 class="mb-2">${allEntries[key].created_at}</h5>
-            <p class="mb-2">${allEntries[key].content}</p>
+            <h5 class="mb-2">${entries[key].created_at}</h5>
+            <p class="mb-2">${entries[key].content}</p>
         </div>
     `;
 
@@ -88,22 +88,22 @@ function displayAllEntries(items) {
     }
 }
 
-const API_URL = "https://tkuelmfwvgrzbvyncons.supabase.co"
-const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxMzAzOTAsImV4cCI6MTk2MDcwNjM5MH0.mzpR2uu1eH7weegTdq4lthnsVpcfLN6pJe3zNnWI8W4'
-
+const API_URL = 'https://tkuelmfwvgrzbvyncons.supabase.co'
+const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw'
 fetch(`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
-
-        const allEntries =
-            data.map(item => console.log(item.content))
-            displayAllEntries(allEntries)
-
-        const publicNews =
-            data.filter(item => item.isPublic === true)
+        const publicNews = data.filter(entries => entries.isPublic === true)
             console.log("Public News Only")
-            publicNews.map(item => console.log(item.content))
+            publicNews.map(entries => console.log(entries.content))
+            console.log(publicNews)
             displayAllEntries(publicNews)
 
-
     });
+
+
+
+
+// const allEntries =
+//     data.map(item => console.log(item.content))
+// displayAllEntries(allEntries)
