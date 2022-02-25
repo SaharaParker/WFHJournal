@@ -13,30 +13,30 @@ const newpassValue = "Password1";
 
         event.preventDefault()
 
-        newStaff(email,password)
+        signUp(email,password)
             .then(data => {
                 if (data === true) {
                     window.location.href = "/index.html";
             }
-    })
+        });
 
-    async function newStaff(email, password) {
-            const newUser = {
-                firstName: firstNameValue,
-                lastName: lastNameValue,
-                email: emailValue,
-                password: newpassValue
+
+        async function signUp(email,password){
+
+            const newStaff ={
+                email: email,
+                password: password
             }
 
-            const signUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup?apikey=${API_KEY}`,{
-                method:"POST",
+            const signupUser = await fetch(`https://xvhrhlkmoaprvzmyyurp.supabase.co/auth/v1/signup`, {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'apikey': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw"
+                    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2aHJobGttb2FwcnZ6bXl5dXJwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NDUwMjg4MCwiZXhwIjoxOTYwMDc4ODgwfQ._Nn8340qosB8uceqOqeVF4x-yeJiUz3MtXY30pDPeyY'
                 },
                 body: JSON.stringify(newUser)
-                })
-            return signUser.json()
-        }
-    })
+            })
+
+            return signUpUser.json()
+        }})
 
