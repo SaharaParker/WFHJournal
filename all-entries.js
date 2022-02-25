@@ -25,7 +25,7 @@ fetch('https://tkuelmfwvgrzbvyncons.supabase.co/rest/v1/entries?apikey=eyJhbGciO
     .then(res => res.json())
     .then(data => {
         console.log("====All News====")
-        journalEntries.map(entries => console.log(entries.content))
+        data.map(entries => console.log(entries.content))
         displayAllEntries(journalEntries)
     })
 
