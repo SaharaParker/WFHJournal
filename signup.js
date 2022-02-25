@@ -38,4 +38,5 @@ const password = "Password1";
             },
             body: JSON.stringify(newUser)
         })
+        return signUpUser.json()
     }
