@@ -16,7 +16,7 @@ loginForm.addEventListener('submit', (evt) => {
     logIn(emailNameEl.value, passwordNameEl.value)
         .then (data => {
             console.log(data)
-            if (data.email !== undefined) {
+            if (data.email === "") {
                 window.location.replace('/all-entries.html')
             }
         })
@@ -29,7 +29,7 @@ async function logIn(email, password) {
         password: password
     }
 
-    const logInUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup`,{
+    const logInUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ async function logIn(email, password) {
         },
         body: JSON.stringify(existUser)
     })
-    const loggedInUser = await signUpUser.json()
+    const loggedInUser = await logIn.json()
     return loggedInUser
 
 }
@@ -50,7 +50,6 @@ async function logIn(email, password) {
             checkIsNotEmpty(emailInput, "Email is required.") &&
             checkIsNotEmpty(passwordInput, "Password is required.")
         ) {
-            window.location.href = '/all-entries.html';
 
         }
 
