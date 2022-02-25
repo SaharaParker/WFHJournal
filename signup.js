@@ -12,18 +12,18 @@ const email = "THsahara@WFH.com";
 const password = "Password1";
 
 
-signFormEl.addEventListener('submit', (evt) => {
-    evt.preventDefault()
+    signFormEl.addEventListener('submit', (evt) => {
+        evt.preventDefault()
 
-    signUp(firstName, lastName, email, password)
-        .then (data => {
-            if (data === true) {
-                window.location.href = 'index.html'
-            }
-        })
-})
+        signUp(firstName, lastName, email, password)
+            .then (data => {
+                if (data === true) {
+                    window.location.href = 'index.html'
+                }
+            })
+    })
 
 
-function signUp(firstName, lastName, email, password){
+    function signUp(firstName, lastName, email, password) {
 
-}
+    }
