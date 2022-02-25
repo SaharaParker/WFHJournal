@@ -23,13 +23,13 @@ loginForm.addEventListener('submit', (evt) => {
 })
 
 
-async function logIn(email, password) {
+ function logIn(email, password) {
     const existUser = {
         email: email,
         password: password
     }
 
-    const logInUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
+    const logInUser = fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ async function logIn(email, password) {
         },
         body: JSON.stringify(existUser)
     })
-    const loggedInUser = await logIn.json()
+    const loggedInUser = existUser.json()
     return loggedInUser
 
 }
