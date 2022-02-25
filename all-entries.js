@@ -1,4 +1,4 @@
-const form = document.getElementById('jourentries');
+const form = document.getElementById('addent');
 
 form.addEventListener('submit',(evt)=>{
     evt.preventDefault();
