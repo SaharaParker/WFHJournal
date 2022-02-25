@@ -26,5 +26,7 @@ const password = "Password1";
 
     async function signUp(firstName, lastName, email, password) {
 
-        const signUpUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup?apikey=${API_KEY}`)
+        const signUpUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup`,{
+            method: 'POST'
+        })
     }
