@@ -26,8 +26,8 @@ const password = "Password1";
 
     async function signUp(firstName, lastName, email, password) {
         const newUser = {
-            email:email,
-            password:password
+            email: email,
+            password: password
         }
 
         const signUpUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup`,{
@@ -35,7 +35,7 @@ const password = "Password1";
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw',
-                body: JSON.stringify(data)
             },
+            body: JSON.stringify(newUser)
         })
     }
