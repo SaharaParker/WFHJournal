@@ -5,8 +5,8 @@ fetch('https://tkuelmfwvgrzbvyncons.supabase.co/rest/v1/entries?apikey=eyJhbGciO
     .then(data => {
         console.log("====All News====")
         data.map(entries => console.log(entries.content))
+        displayAllEntries(entries.content)
     })
- journalEntries(entries.content)
 
 const form = document.getElementById('addent');
 
