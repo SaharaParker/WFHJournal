@@ -7,11 +7,11 @@ const guestLogin = document.getElementById('submit-guest');
 const API_URL = 'https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password'
 const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw'
 
-loginFormEl.addEventListener('submit', (evt) => {
+loginForm.addEventListener('submit', (evt) => {
     evt.preventDefault()
     console.log(evt.target[2].value)
-    console.log(emailNameEl.value)
-    console.log(passwordNameEl.value)
+    console.log(emailInput.value)
+    console.log(passwordInput.value)
 
     logIn(emailNameEl.value, passwordNameEl.value)
         .then (data => {
