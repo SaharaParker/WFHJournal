@@ -26,11 +26,6 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
     //
     // };
 
-    guestLogin.addEventListener('click',(evt) =>{
-        evt.preventDefault();
-        window.location.href='/dashboard.html'
-    })
-
 function checkIsNotEmpty(domInput,errorMessage){
     if (domInput.value === ""){
         // alert("Email or Password Required!");
@@ -46,6 +41,10 @@ function checkIsNotEmpty(domInput,errorMessage){
     return true;
 }
 
+guestLogin.addEventListener('click',(evt) =>{
+    evt.preventDefault();
+    window.location.href='/dashboard.html'
+})
 
 
 
