@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', (evt) => {
     console.log(emailInput.value)
     console.log(passwordInput.value)
 
-    logIn(emailNameEl.value, passwordNameEl.value)
+    logIn(emailInput.value, passwordInput.value)
         .then (data => {
             console.log(data)
             if (data.email === "") {
