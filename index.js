@@ -10,17 +10,20 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
 // const email =
 // const password =
 
-    loginForm.addEventListener('submit',(event) =>{
+    loginForm.addEventListener('submit',(event) => {
         errorDiv.innerHTML = ""
         event.preventDefault();
 
-        logIn(emailInput,passwordInput)
-            .then(data => {
-                if(data === true) {
-                    window.location.href = "/dashboard.html"
-                }
-            })
-    })
+        if (
+            checkIsNotEmpty(emailInput, "Username is required.") &&
+            checkIsNotEmpty(passwordInput, "Password is required.")
+        ) {
+            window.location.href = '/dashboard.html';
+
+        }
+
+    });
+
 
     // async function logIn(emailInput, passwordInput) {
     //
