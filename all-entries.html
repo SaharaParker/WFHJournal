@@ -17,15 +17,42 @@
 </div>
 
 <!--     Journal Entries here create in JavaScript??-->
-<div id="jourentries" class="">
-    <h1 class="font-bold text-center text-cannon-pink-50 text-xl">View Work From Home Journal Entries</h1>
-    <div id="entrycontain" class="flex-col mx-auto text-cannon-pink-300 bg-camelot-900 rounded-3xl my-40 px-1 pt-1 pb-24 border-8 w-1/2 border-cannon-pink-500">
-
+    <div id="jourentries" class="float-left">
+        <h1 class="font-bold text-center text-cannon-pink-50 text-xl">View Work From Home Journal Entries</h1>
+        <div id="entrycontain" class="flex-col mx-auto text-cannon-pink-300 bg-camelot-900 rounded-3xl my-40 px-1 pt-1 pb-24 border-8 w-1/2 border-cannon-pink-500">
+        </div>
     </div>
 
 
     <div>
-        <input type="submit" class=" mb-3 mt-16 p-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500" value="+ Add Entry ">
+        <div class="bg-camelot-900 rounded-2xl space-x-4 h-full w-1/3 mt-60 mx-auto bg-camelot-500 border-8 border-cannon-pink-500">
+            <img src="assets/formlogo.png" alt="#" class="ml-48 h-36 w-36">
+            <h1 class="text-cannon-pink-500 text-lg font-bold text-center">Add Entry</h1>
+            <div>
+                <form id="addent">
+                    <div class="flex flex-col mt-6">
+                        <div class="space-x-2 ml-14">
+                            <input type="text" placeholder="First Name" id="author-first"
+                                   class="border-4 rounded-xl bg-cannon-pink-200 border-cannon-pink-500">
+                            <input type="text" placeholder="Last Name" id="author-last"
+                                   class="border-4 rounded-xl bg-cannon-pink-200 border-cannon-pink-500">
+                        </div>
+                        <input type="date" id="newdate" class="ml-44 mt-3 border-4 rounded-xl w-1/3 bg-cannon-pink-200 border-cannon-pink-500">
+                    </div>
+                    <div>
+                     <textarea name="new-entry" id="newentry" cols="50" rows="10"
+                               class="ml-14 mt-6 border-4 rounded-xl border-cannon-pink-500 bg-cannon-pink-200"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <div class="space-x-4 mb-4">
+                <input type="submit" value="Submit as Public"
+                       class="mb-3 ml-28 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
+                <input type="submit" value="Submit as Private"
+                       class="mb-3 mt-16 py-2 font-bold border-4 rounded-2xl border-4 border-pickled-bluewood-500 bg-deep-cerulean-900 hover:bg-deep-cerulean-500 text-cannon-pink-500">
+            </div>
+        </div>
     </div>
 </div>
 
