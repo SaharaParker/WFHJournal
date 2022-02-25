@@ -1,3 +1,5 @@
+const form = document.getElementById('jourentries');
+
 form.addEventListener('submit',(evt)=>{
     evt.preventDefault();
 
