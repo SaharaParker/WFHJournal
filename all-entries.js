@@ -4,7 +4,7 @@ fetch('https://tkuelmfwvgrzbvyncons.supabase.co/rest/v1/entries?apikey=eyJhbGciO
         console.log("====All News====")
         data.map(entries => console.log(entries.content))
     })
- displayAllEntries(entries.conent)
+ displayAllEntries(entries.content)
 
 const form = document.getElementById('addent');
 
