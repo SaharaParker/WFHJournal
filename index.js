@@ -15,7 +15,7 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
         event.preventDefault();
 
         if (
-            checkIsNotEmpty(emailInput, "Username is required.") &&
+            checkIsNotEmpty(emailInput, "Email is required.") &&
             checkIsNotEmpty(passwordInput, "Password is required.")
         ) {
             window.location.href = '/dashboard.html';
