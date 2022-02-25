@@ -22,28 +22,28 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
             })
     })
 
-    async function logIn(emailInput, passwordInput) {
-
-    };
+    // async function logIn(emailInput, passwordInput) {
+    //
+    // };
 
     guestLogin.addEventListener('click',(evt) =>{
         evt.preventDefault();
         window.location.href='/dashboard.html'
     })
 
-// function checkIsNotEmpty(domInput,errorMessage){
-//     if (domInput.value === ""){
-//         // alert("Email or Password Required!");
-//         console.log(errorMessage);
-//
-//         const div = document.createElement('div');
-//         div.innerHTML = `<p class="bg-gray-400 text-red-600 font-bold border-4"> ${errorMessage}</p>`;
-//
-//         errorDiv.appendChild(div);
-//
-//         return false;
-//     }
-//     return true;
+function checkIsNotEmpty(domInput,errorMessage){
+    if (domInput.value === ""){
+        // alert("Email or Password Required!");
+        console.log(errorMessage);
+
+        const div = document.createElement('div');
+        div.innerHTML = `<p class="bg-gray-400 text-red-600 font-bold border-4"> ${errorMessage}</p>`;
+
+        errorDiv.appendChild(div);
+
+        return false;
+    }
+    return true;
 }
 
 

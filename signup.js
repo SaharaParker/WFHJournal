@@ -24,7 +24,7 @@ const password = "Password1";
     })
 
 
-    async function signUp(firstName, lastName, email, password) {
+    async function signUp(email, password) {
         const newUser = {
             email: email,
             password: password
