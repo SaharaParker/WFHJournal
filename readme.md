@@ -1,5 +1,5 @@
 ##Objectives
-- [ ] Create a Sign Up page that saves Member Info
+- [x] Create a Sign Up page that saves Member Info
 - [ ] Create a Login page for members(w/Login as guest button) that USES Member Info
 - [ ] Create a guest page with PUBLIC entries only(w/ options to login or sign up)
 - [ ] Create a member page with ALL Entries visible and the ability to delete entires
