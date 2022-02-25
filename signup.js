@@ -24,6 +24,7 @@ const password = "Password1";
     })
 
 
-    function signUp(firstName, lastName, email, password) {
+    async function signUp(firstName, lastName, email, password) {
 
+        const signUpUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/signup?apikey=${API_KEY}`)
     }
