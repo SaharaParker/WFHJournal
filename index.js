@@ -16,7 +16,7 @@ loginForm.addEventListener('submit', (evt) => {
     logIn(emailInput.value, passwordInput.value)
         .then (data => {
             console.log(data)
-            if (data.email === "") {
+            if (data.email.value === "") {
                 window.location.replace('/all-entries.html')
             }
         })
@@ -37,8 +37,9 @@ loginForm.addEventListener('submit', (evt) => {
         },
         body: JSON.stringify(existUser)
     })
-    const loggedInUser = existUser.json()
-    return loggedInUser
+
+    const loggedInUser = logInUser.json()
+    return response (loggedInUser)
 
 }
 
@@ -47,8 +48,8 @@ loginForm.addEventListener('submit', (evt) => {
         event.preventDefault();
 
         if (
-            checkIsNotEmpty(emailInput, "Email is required.") &&
-            checkIsNotEmpty(passwordInput, "Password is required.")
+            checkIsNotEmpty(emailInput.value, "Email is required.") &&
+            checkIsNotEmpty(passwordInput.value, "Password is required.")
         ) {
 
         }

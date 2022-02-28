@@ -1,9 +1,10 @@
 ##Objectives
 - [x] Create a Sign Up page that saves Member Info
 - [ ] Create a Login page for members(w/Login as guest button) that USES Member Info
-- [ ] Create a guest page with PUBLIC entries only(w/ options to login or sign up)
+- [x] Create a guest page with PUBLIC entries only(w/ options to login or sign up)
 - [ ] Create a member page with ALL Entries visible and the ability to delete entires
 - [ ] Create a member page to add entries(that also saves them)
+
 
 ##Steps to take
 - [x] Set up Repo
@@ -14,7 +15,7 @@
 - [x] Do Xano readings and demo
 - [x] Set up HTML Pages (4 pages)
 - [x] Do all HTML and CSS
-- [ ] Do all javascript
+- [x] Do all javascript
 - [ ] Check that everything is functioning
 - [X] Deploy to vercel
 
@@ -32,3 +33,15 @@ Postgres User: postgres
 Postgres Port: 6543
 Postgres Host: db.tkuelmfwvgrzbvyncons.supabase.co
 Postgres PWD: Wb2md7yegM9jJmCt
+
+
+
+
+
+
+
+
+
+
+
+
