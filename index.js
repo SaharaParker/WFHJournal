@@ -16,20 +16,21 @@ loginForm.addEventListener('submit', (evt) => {
     logIn(emailInput.value, passwordInput.value)
         .then (data => {
             console.log(data)
-            if (data.email.value === "") {
+            console.log(data.user.email)
+            if (data.user.email !== "") {
                 window.location.replace('/all-entries.html')
             }
         })
 })
 
 
- function logIn(email, password) {
+ async function logIn(email, password) {
     const existUser = {
         email: email,
         password: password
     }
 
-    const logInUser = fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
+    const logInUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -38,8 +39,8 @@ loginForm.addEventListener('submit', (evt) => {
         body: JSON.stringify(existUser)
     })
 
-    const loggedInUser = logInUser.json()
-    return response (loggedInUser)
+    const loggedInUser = await logInUser.json()
+    return loggedInUser
 
 }
 
@@ -48,16 +49,17 @@ loginForm.addEventListener('submit', (evt) => {
         event.preventDefault();
 
         if (
-            checkIsNotEmpty(emailInput.value, "Email is required.") &&
-            checkIsNotEmpty(passwordInput.value, "Password is required.")
+            checkIsNotEmpty(emailInput.value.trim(), "Email is required.") &&
+            checkIsNotEmpty(passwordInput.value.trim(), "Password is required.")
         ) {
+            
 
         }
 
     });
 
 function checkIsNotEmpty(domInput,errorMessage){
-    if (domInput.value === ""){
+    if (domInput === ""){
         // alert("Email or Password Required!");
         console.log(errorMessage);
 
