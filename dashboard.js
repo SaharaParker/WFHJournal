@@ -33,6 +33,7 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
         console.log("Public News Only")
         const entryContent = publicNews.map(entries => {
             return entries.content
+            console.log(entryContent)
         })
         console.log(publicNews)
         const div = document.createElement('div')
