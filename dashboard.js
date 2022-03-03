@@ -30,12 +30,12 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
         const publicNews = data.filter(entries => entries.isPublic === true)
-        const div = document.createElement('div')
-        div.innerHTML = `${publicNews.content}`
-        entryShow.appendChild(div)
         console.log("Public News Only")
         publicNews.map(entries => console.log(entries.firstName,entries.lastName,entries.created_at,entries.content))
         console.log(publicNews)
+        const div = document.createElement('div')
+        div.innerHTML = `${publicNews}`
+        entryShow.appendChild(div)
         return publicNews;
     });
 
