@@ -34,7 +34,7 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
         publicNews.map(entries => console.log(entries.firstName,entries.lastName,entries.created_at,entries.content))
         console.log(publicNews)
         const div = document.createElement('div')
-        div.innerHTML = `<p>$(publicNews)</p>`
+        div.innerHTML = `<p>(publicNews)</p>`
         entryShow.appendChild(div)
         return publicNews;
     });
