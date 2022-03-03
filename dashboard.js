@@ -31,11 +31,12 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(data => {
         const publicNews = data.filter(entries => entries.isPublic === true)
         console.log("Public News Only")
-        publicNews.map(entries => console.log(entries))
+        const entryContent = publicNews.map(entries => {
+            return entries.content
+        })
         console.log(publicNews)
-        console.log(publicNews[0].content)
         const div = document.createElement('div')
-        div.innerHTML = `<p>${publicNews["content"]}</p>`;
+        div.innerHTML = `<p>${entryContent}</p>`;
         entryShow.appendChild(div)
         return publicNews;
     });
