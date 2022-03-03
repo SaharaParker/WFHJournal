@@ -35,7 +35,7 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
         entryShow.appendChild(div)
         console.log("Public News Only")
         publicNews.map(entries => console.log(entries.firstName,entries.lastName,entries.created_at,entries.content))
-        console.log(publicNews.content)
+        console.log(publicNews)
         return publicNews;
     });
 
