@@ -28,9 +28,9 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
 fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
-        // const publicNews = data.filter(entries => entries.isPublic === true)
-        // console.log("Public News Only")
-        // publicNews.map(entries => console.log(entries.content))
+        const publicNews = data.filter(entries => entries.isPublic === true)
+        console.log("Public News Only")
+        publicNews.map(entries => console.log(entries.content))
         console.log(data)
         return data;
     });
