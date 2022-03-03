@@ -31,9 +31,9 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(data => {
         const publicNews = data.filter(entries => entries.isPublic === true)
         console.log("Public News Only")
-        publicNews.map(entries => entries.firstName, entries.lastName, entries.created_at, entries.content)
-        console.log(entries)
-        return data;
+        publicNews.map(entries => console.log(entries.firstName,entries.lastName,entries.created_at,entries.content))
+        console.log(publicNews)
+        return publicNews;
     });
 
 
