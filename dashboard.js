@@ -35,7 +35,7 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
             return entries.content
             console.log(entryContent)
         })
-        console.log(publicNews)
+        // console.log(publicNews)
         for (const key in entryContent) {
             const div = document.createElement('div')
             div.innerHTML = `<div class="mb-4"><p>${entries[key].content}</p></div><hr>`;
