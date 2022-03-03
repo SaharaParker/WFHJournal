@@ -52,7 +52,7 @@ loginForm.addEventListener('submit', (evt) => {
             checkIsNotEmpty(emailInput.value.trim(), "Email is required.") &&
             checkIsNotEmpty(passwordInput.value.trim(), "Password is required.")
         ) {
-            
+            window.location.replace = '/dashboard.html'
 
         }
 
