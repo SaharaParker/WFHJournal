@@ -9,36 +9,20 @@ fetch (`${API_URL}/rest/v1/entries?apikey=${API_KEY}`)
     .then(data => {
         const publicNews = data.filter(entries => entries.isPublic === true)
         console.log("Public News Only")
-        // const entryContent = publicNews.map( entries => {
-        //     return entries.content
-        // })
 
-        // console.log(entryContent)
-        console.log(publicNews) // object .content, .something, ..
+        console.log(publicNews)
 
-        // for (const key in publicNews) {
-        //     const div = document.createElement('div')
-        //     //Need to make separate divs!!
-        //     div.innerHTML = `
-        //                     <div class="mb-4">
-        //                         <p>${entryContent}</p>
-        //                     </div><hr>
-        //                     `;
-        //     entryShow.appendChild(div)
-        //     return publicNews;
-        // }
+        publicNews.map( entries => {
+            const div = document.createElement('div')
 
-        // publicNews.map( entry => {
-        //     const div = document.createElement('div')
-        //         //Need to make separate divs!!
-        //         div.innerHTML = `
-        //                         <div class="mb-4">
-        //                             <h4>${entry.title}</h4>
-        //                             <p>${entry.content}</p>
-        //                         </div><hr>
-        //                         `;
-        //         entryShow.appendChild(div)
-        // })
+                div.innerHTML = `
+                                <div class="mb-4">
+                                    <h4>${entries.created_at}</h4>
+                                    <p>${entries.content}</p>
+                                </div><hr>
+                                `;
+                entryShow.appendChild(div)
+        })
 
     });
 
