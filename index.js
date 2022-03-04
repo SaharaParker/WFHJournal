@@ -31,7 +31,7 @@ loginForm.addEventListener('submit', (evt) => {
     }
 
     const logInUser = await fetch(`https://tkuelmfwvgrzbvyncons.supabase.co/auth/v1/token?grant_type=password`,{
-        method: 'GET',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrdWVsbWZ3dmdyemJ2eW5jb25zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NTEzMDM5MCwiZXhwIjoxOTYwNzA2MzkwfQ.xO6WIhxzv4ngdiIVpz9DC9Wa0wOBrurvANuFsRjCfEw',
